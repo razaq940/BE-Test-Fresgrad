@@ -1,0 +1,57 @@
+<%- include("partials/header"); -%>
+
+  <%  post.forEach(function(post){ %>
+
+  <h1><%=post.title%></h1>
+  <p>
+  <p><%=post.articlePost%></p>
+  </p>
+ 
+
+    <form action="/deleteArticle" method="post">
+      <div id="comment_form">
+        <button type="submit" name="deleteArticleId" value="<%= post._id %>">Delete Article</button>
+      </div>
+    </form>
+    <%  post.comment.forEach(function(comment){ %>
+      <div class="box">
+        <form action="/deleteComment" method="post">
+          <div class="item">
+            <p><%=comment.name%></p>
+          </div>
+          <div class="item">
+            <p><%=comment.commentPost%></p>
+          </div>
+          <input type="checkbox" name="checkbox"  value="<%=comment._id%>" onChange="this.form.submit()">
+        
+          <input type="hidden" name="checkbox2" value="<%=post.title%>"></input>
+          
+          <p>^-- Hit this to delete an comment</p>
+            
+        </form>
+      </div>
+    <%  }) %>
+  
+
+
+  <% }) %>
+  
+  <%  post.forEach(function(post){ %>
+  <div id="comment_form">
+  <form action="/addComment" method="post">
+    <div>
+      <input type="text" name="postName" id="name" value="" placeholder="Name">
+    </div>
+    <div>
+      <textarea rows="10" name="postComment" id="comment" ></textarea>
+    </div>
+    <div>
+      <input type="submit" name="submit" value="Add Comment">
+    </div>
+    <input type="hidden" name="postTitle" value="<%=post.title%>"></input>
+    <input type="hidden" name="postId" value="<%=post._id%>"></input>
+  </form>
+  <%  }) %>
+    
+  </div>
+<%- include("partials/footer"); -%>

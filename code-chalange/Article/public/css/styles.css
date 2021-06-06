@@ -1,0 +1,106 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+.navbar-nav  li a:hover {
+    color: #1abc9c !important;
+}
+
+.footer-padding {
+	padding-bottom: 60px;
+}
+
+.footer {
+	position: absolute;
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	background-color: #1abc9c;
+}
+
+.footer p {
+	margin-top: 25px;
+	font-size: 12px;
+  color: #fff;
+}
+
+.box {
+  max-width: 400px;
+  margin: 50px auto;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.item {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #F1F1F1;
+}
+
+body {
+  font-family: 'Lucida Grande', 'Helvetica Neue', sans-serif;
+  font-size: 13px;
+}
+
+#comment_form input, #comment_form textarea {
+  border: 2px solid rgba(0,0,0,0.1);
+  padding: 8px 10px;
+  outline: 0;
+}
+#comment_form input {
+  width: 250px;
+}
+#comment_form textarea {
+  width: 450px;
+}
+
+#comment_form input[type="submit"] {
+  cursor: pointer;
+  background: -webkit-linear-gradient(top, #efefef, #ddd);
+  background: -moz-linear-gradient(top, #efefef, #ddd);
+  background: -ms-linear-gradient(top, #efefef, #ddd);
+  background: -o-linear-gradient(top, #efefef, #ddd);
+  background: linear-gradient(top, #efefef, #ddd);
+  color: #333;
+  text-shadow: 0px 1px 1px rgba(255,255,255,1);
+  border: 1px solid #ccc;
+}
+
+#comment_form input[type="submit"]:hover {
+  background: -webkit-linear-gradient(top, #eee, #ccc);
+  background: -moz-linear-gradient(top, #eee, #ccc);
+  background: -ms-linear-gradient(top, #eee, #ccc);
+  background: -o-linear-gradient(top, #eee, #ccc);
+  background: linear-gradient(top, #eee, #ccc);
+  border: 1px solid #bbb;
+}
+
+#comment_form input[type="submit"]:active {
+  background: -webkit-linear-gradient(top, #ddd, #aaa);
+  background: -moz-linear-gradient(top, #ddd, #aaa);
+  background: -ms-linear-gradient(top, #ddd, #aaa);
+  background: -o-linear-gradient(top, #ddd, #aaa);
+  background: linear-gradient(top, #ddd, #aaa);    
+  border: 1px solid #999;
+}
+
+#comment_form div {
+  margin-bottom: 8px;
+}

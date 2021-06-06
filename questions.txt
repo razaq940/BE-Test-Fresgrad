@@ -1,0 +1,111 @@
+1. Give a list of advantages of Node.js
+    answer:
+    - Powerful tech stack for web development
+    - Developers can use JavaScript for the entire project
+    - A fast environment for microservice development
+    - Scalable web app development
+    - Control flow features
+    - V8 Engine
+    - Powerful data processing
+    - Rich additional functionality from Node Package Manager
+    - Active community
+    - Big corporations attest to Node.js
+
+2. Give an explanation about Synchronous & Asynchronous
+    answer:
+    - Synchronous :  It waits for each operation to complete, after that only it executes the next operation. 
+                    For your query: The console.log() command will not be executed until & unless the query has 
+                    finished executing to get all the result from Database.
+
+    - Asynchronous : It never waits for each operation to complete, rather it executes all operations in the first 
+                    GO only. The result of each operation will be handled once the result is available. For your 
+                    query: The console.log() command will be executed soon after the Database.Query() method. 
+                    While the Database query runs in the background and loads the result once it is finished 
+                    retrieving the data.
+
+3. What is a module in Node.js?
+    answer:
+    -   Module in Node.js is a simple or complex functionality organized in single or multiple JavaScript files which 
+        can be reused throughout the Node.js application.
+
+        Each module in Node.js has its own context, so it cannot interfere with other modules or pollute 
+        global scope. Also, each module can be placed in a separate .js file under a separate folder.
+
+        Node.js implements CommonJS modules standard. CommonJS is a group of volunteers who define JavaScript 
+        standards for web server, desktop, and console application.
+
+4. Give an explanation about callback
+    answer:
+    -   A callback is a function that is to be executed after another function has finished executing — hence the
+        name ‘call back’.
+
+        In JavaScript, functions are objects. Because of this, functions can take functions as arguments, and can be 
+        returned by other functions. Functions that do this are called higher-order functions. Any function that is 
+        passed as an argument is called a callback function.
+
+5. What are array iterator functions in JavaScript?
+    answer:
+    -   Specifically, an iterator is any object which implements the Iterator protocol by having a next() method 
+        that returns an object with two properties: ... The most common iterator in JavaScript is the Array iterator, 
+        which returns each value in the associated array in sequence
+
+6. What is the differentiation between SQL & NoSQL (at high level)?
+    answer:
+    -SQL :  When it comes to database technology, there’s no one-size-fits-all solution. That’s why many businesses rely 
+            on both relational and nonrelational databases for different tasks. Even as NoSQL databases gain popularity 
+            for their speed and scalability, there are still situations where a highly structured SQL database may be 
+            preferable.
+    -NoSQL: When all of the other components of your server-side application are designed to be fast and seamless, 
+            NoSQL databases prevent data from being the bottleneck. Big data is the real NoSQL motivator here, 
+            doing things that traditional relational databases cannot.
+
+7. What is MongoDB?
+    answer:
+    -   MongoDB is a document-oriented NoSQL database used for high volume data storage. Instead of using tables 
+        and rows as in the traditional relational databases, MongoDB makes use of collections and documents. ... 
+        Collections contain sets of documents and function which is the equivalent of relational database tables
+
+8. What is index in MongoDB?
+    answer:
+    -   MongoDB uses indexing in order to make the query processing more efficient. If there is no indexing, then 
+        the MongoDB must scan every document in the collection and retrieve only those documents that match the query. 
+        Indexes are special data structures that stores some information related to the documents such that it becomes 
+        easy for MongoDB to find the right data file. The indexes are order by the value of the field specified in the 
+        index.
+
+9. What is Document & Collection in MongoDB?
+    answer:
+    -   MongoDB stores data records as documents (specifically BSON documents) which are gathered together in collections. 
+        A database stores one or more collections of documents.
+
+10. What Data Types are supported in MongoDB?
+    answer:
+    - String − This is the most commonly used datatype to store the data. String in MongoDB must be UTF-8 valid.
+
+    - Integer − This type is used to store a numerical value. Integer can be 32 bit or 64 bit depending upon your server.
+
+    - Boolean − This type is used to store a boolean (true/ false) value.
+
+    - Double − This type is used to store floating point values.
+
+    - Min/ Max keys − This type is used to compare a value against the lowest and highest BSON elements.
+
+    - Arrays − This type is used to store arrays or list or multiple values into one key.
+
+    - Timestamp − ctimestamp. This can be handy for recording when a document has been modified or added.
+
+    - Object − This datatype is used for embedded documents.
+
+    - Null − This type is used to store a Null value.
+
+    - Symbol − This datatype is used identically to a string; however, it's generally reserved for languages that use a specific symbol type.
+
+    - Date − This datatype is used to store the current date or time in UNIX time format. You can specify your own date time by creating object of Date and passing day, month, year into it.
+
+    - Object ID − This datatype is used to store the document’s ID.
+
+    - Binary data − This datatype is used to store binary data.
+
+    - Code − This datatype is used to store JavaScript code into the document.
+
+    - Regular expression − This datatype is used to store regular expression.
